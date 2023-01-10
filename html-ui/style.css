@@ -1,0 +1,163 @@
+* {
+    font-family: 'Inter';
+}
+.signup button, .signin button {
+    align-items: center;
+    width: 349px;
+    height: 64px;
+    border-radius: 40px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.signup, .signin{
+    text-align: center;
+}
+.signup input, .signin input {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    flex-direction: row;
+    align-items: center;
+    padding: 14px;
+    gap: 5px;
+
+    width: 350px;
+    height: 44px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Main Colors/Gray/0.5 */
+
+    border: 1px solid #909090;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    margin-bottom: 27px;
+}
+
+.signup h1, .signin h1 {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 40%;
+    /* identical to box height, or 128px */
+
+    align-items: center;
+    text-align: center;
+}
+
+.signin div>button {
+    margin: 0px 159px;
+}
+.tab-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #925FF0;
+}
+.tab-navigation li {
+    float: right;
+    display: inline;
+    border-right: 1px solid #bbb;
+}
+.tab-navigation li:first-child {
+    border-right: none;
+}
+.tab-navigation li:last-child {
+    float: left;
+    border-right: none;
+}
+.tab-navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.tab-navigation li a:hover {
+    background-color: #D3BFF9;
+}
+.active {
+    background-color: #5E3A9E;
+}
+.map-items ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.map-items li {
+    display: inline;
+    float: left;
+    margin-right: 400;
+}
+#logout {
+    align-items: center;
+    width: 349px;
+    height: 64px;
+    border-radius: 40px;
+    border: none;
+    color: white
+}
+.assignment {
+    text-align: center;
+}
+.assignment table {
+    /* border: 0px solid black; */
+    border-collapse: collapse;
+}
+.assignment table th,
+table td {
+    width: 1284px;
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+.assignment table th {
+    color: white;
+    background-color: #5E3A9E;
+}
+.assignment tbody tr:nth-of-type(odd) {
+    background-color: #DECFFB
+}
+.assignment tbody tr:nth-of-type(even) {
+    background-color: #E9DFFC
+}
+.assignment #input-data {
+    display: flex;
+    justify-content: center;
+}
+.assignment select {
+    box-sizing: border-box;
+    /* Auto layout */
+    align-items: center;
+    padding: 10px;
+    margin: 0px 30px;
+    width: 300px;
+    height: 48.17px;
+    background: #D3BFF9;
+    /* Main Colors/Gray/-1 */
+    border: 0.5px solid #E6E6E6;
+    border-radius: 5px;
+}
+.assignment button {
+    align-items: center;
+    width: 349px;
+    height: 64px;
+    border-radius: 40px;
+    border: none;
+    background-color: #925FF0;
+    color: white;
+    margin: 60px;
+}
