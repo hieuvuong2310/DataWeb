@@ -1,7 +1,7 @@
 * {
     font-family: 'Inter';
 }
-.signup button, .signin button {
+.signup button, .signin button, .project-register button {
     align-items: center;
     width: 349px;
     height: 64px;
@@ -10,10 +10,10 @@
     color: #FFFFFF;
 }
 
-.signup, .signin{
+.signup, .signin, .project-register, .profile {
     text-align: center;
 }
-.signup input, .signin input {
+.signup input, .signin input, .project-register input {
     box-sizing: border-box;
 
     /* Auto layout */
@@ -44,7 +44,7 @@
     margin-bottom: 27px;
 }
 
-.signup h1, .signin h1 {
+.signup h1, .signin h1, .project-register h1 {
 
     font-family: 'Inter';
     font-style: normal;
@@ -138,7 +138,7 @@ table td {
     display: flex;
     justify-content: center;
 }
-.assignment select {
+.assignment select, .map-items select {
     box-sizing: border-box;
     /* Auto layout */
     align-items: center;
@@ -151,7 +151,7 @@ table td {
     border: 0.5px solid #E6E6E6;
     border-radius: 5px;
 }
-.assignment button {
+.assignment button, .map-items button {
     align-items: center;
     width: 349px;
     height: 64px;
@@ -160,4 +160,15 @@ table td {
     background-color: #925FF0;
     color: white;
     margin: 60px;
+}
+
+.map-items {
+    text-align: center;
+    padding: 0px 100px 0px 100px;
+}
+.map-items input {
+    width: 156px;
+    height: 41px;
+    left: 678px;
+    top: 585px;
 }
