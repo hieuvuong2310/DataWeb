@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project Register</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <div class = "tab-navigation">
+      <ul style = "background-color: #2A87CE;">
+        <li><a href="MemberProfile.html">Profile</a></li>
+        <li class = "active" style = "background-color: #20679E;"><a href="Dropping.html">Dropping</a></li>
+        <li><a href="MemberDashboard.html">MemberDashboard</a></li>
+        <li><a href="MemberDashboard.html">Data Visualization</a></li>
+      </ul>
+    </div>
+    <div class = "dropping">
+      <div id = "autodrop">
+        <div>
+            <h3>Balls to drop</h3><br>
+            <select name="ball" id="ball">
+            <option value="balls">Number of ball</option>
+            <option value="ball-1">1</option>
+            <option value="ball-2">2</option>
+            </select>
+        </div>
+        <div>
+            <h3>Activities</h3>
+            <select name="activities" id="activities">
+                <option value="activities">Activities</option>
+                <option value="activity-1">Activity 1</option>
+                <option value="activity-2">Activity 2</option>
+              </select>
+        </div>
+        <div>
+            <h3>Auto-drop</h3>
+            <select name="autodropping" id="autodropping">
+                <option value="time">Time</option>
+                <option value="period-1">30 minutes</option>
+                <option value="period-2">1 hour</option>
+              </select>
+        </div>
+      </div>
+      <button id="drop-button">Set up</button><br>
+  </body>
+</html>

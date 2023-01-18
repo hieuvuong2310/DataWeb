@@ -1,7 +1,7 @@
 * {
     font-family: 'Inter';
 }
-.signup button, .signin button, .project-register button {
+.signup button, .signin button, .project-register button, .member-project-register button {
     align-items: center;
     width: 349px;
     height: 64px;
@@ -10,10 +10,10 @@
     color: #FFFFFF;
 }
 
-.signup, .signin, .project-register, .profile {
+.signup, .signin, .project-register, .profile , .member-project-register, .member-profile{
     text-align: center;
 }
-.signup input, .signin input, .project-register input {
+.signup input, .signin input, .project-register input, .member-project-register input {
     box-sizing: border-box;
 
     /* Auto layout */
@@ -44,7 +44,7 @@
     margin-bottom: 27px;
 }
 
-.signup h1, .signin h1, .project-register h1 {
+.signup h1, .signin h1, .project-register h1, .member-project-register h1 {
 
     font-family: 'Inter';
     font-style: normal;
@@ -65,7 +65,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #925FF0;
 }
 .tab-navigation li {
     float: right;
@@ -87,7 +86,9 @@
     text-decoration: none;
 }
 .tab-navigation li a:hover {
-    background-color: #D3BFF9;
+    background-color: white;
+    opacity: 50%;
+    color: black;
 }
 .active {
     background-color: #5E3A9E;
@@ -111,34 +112,36 @@
     border: none;
     color: white
 }
-.assignment {
+.assignment, .dashboard {
     text-align: center;
 }
-.assignment table {
+.assignment table, .dashboard table {
     /* border: 0px solid black; */
     border-collapse: collapse;
 }
 .assignment table th,
-table td {
+.assignment table td, .dashboard table th, .dashboard table td {
     width: 1284px;
     padding: 0.75rem;
     vertical-align: middle;
 }
-.assignment table th {
+.assignment table th, .dashboard table th {
     color: white;
-    background-color: #5E3A9E;
 }
 .assignment tbody tr:nth-of-type(odd) {
     background-color: #DECFFB
 }
+.dashboard tbody tr:nth-of-type(odd) {
+    background-color: #AEDCFF
+}
 .assignment tbody tr:nth-of-type(even) {
     background-color: #E9DFFC
 }
-.assignment #input-data {
+#input-data {
     display: flex;
     justify-content: center;
 }
-.assignment select, .map-items select {
+.assignment select, .map-items select, .dashboard select, .dropping select {
     box-sizing: border-box;
     /* Auto layout */
     align-items: center;
@@ -146,22 +149,31 @@ table td {
     margin: 0px 30px;
     width: 300px;
     height: 48.17px;
-    background: #D3BFF9;
     /* Main Colors/Gray/-1 */
     border: 0.5px solid #E6E6E6;
     border-radius: 5px;
 }
-.assignment button, .map-items button {
+.assignment select, .map-items select {
+    background: #D3BFF9;
+}
+.dashboard select, .dropping select {
+    background: #AEDCFF;
+}
+.assignment button, .map-items button, .dashboard button, .dropping button {
     align-items: center;
     width: 349px;
     height: 64px;
     border-radius: 40px;
     border: none;
-    background-color: #925FF0;
     color: white;
     margin: 60px;
 }
-
+.assignment button, .map-items button {
+    background-color: #925FF0;
+}
+.dashboard button, .dropping button {
+    background-color: #2A87CE;
+}
 .map-items {
     text-align: center;
     padding: 0px 100px 0px 100px;
@@ -171,4 +183,11 @@ table td {
     height: 41px;
     left: 678px;
     top: 585px;
+}
+.dropping {
+    margin: 0 auto;
+    text-align: center;
+}
+.member-profile {
+    padding: 10%;
 }
